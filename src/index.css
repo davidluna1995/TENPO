@@ -1,0 +1,122 @@
+/* Tema Pokémon tipo planta */
+:root {
+  --pokemon-green: #4caf50;
+  --pokemon-light-green: #81c784;
+  --pokemon-dark-green: #388e3c;
+  --pokemon-leaf: #a5d6a7;
+}
+
+body {
+  background-color: #f1f8e9 !important;
+}
+
+.navbar {
+  background-color: var(--pokemon-green) !important;
+}
+
+.navbar-brand, .navbar .text-muted, .navbar span {
+  color: white !important;
+}
+
+.btn-primary {
+  background-color: var(--pokemon-dark-green) !important;
+  border-color: var(--pokemon-dark-green) !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--pokemon-green) !important;
+  border-color: var(--pokemon-green) !important;
+}
+
+.text-primary {
+  color: var(--pokemon-dark-green) !important;
+}
+
+.list-group-item-action:hover {
+  background-color: var(--pokemon-leaf) !important;
+}
+
+.list-group-item-action:hover .text-muted,
+.list-group-item-action:hover .text-capitalize {
+  color: white !important;
+}
+
+.badge {
+  background-color: var(--pokemon-green) !important;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card {
+  border-color: var(--pokemon-light-green) !important;
+}
+
+.card-header {
+  background-color: var(--pokemon-leaf) !important;
+  border-bottom: 1px solid var(--pokemon-light-green) !important;
+}
+
+.form-control:focus {
+  border-color: var(--pokemon-green);
+  box-shadow: 0 0 0 0.25rem rgba(76, 175, 80, 0.25);
+}
+
+/* Pagination styles */
+.pagination .page-link {
+  color: var(--pokemon-dark-green);
+  border-color: var(--pokemon-light-green);
+}
+
+.pagination .page-item.active .page-link {
+  background-color: var(--pokemon-green);
+  border-color: var(--pokemon-green);
+  color: white;
+}
+
+.pagination .page-item.disabled .page-link {
+  color: #6c757d;
+  border-color: var(--pokemon-light-green);
+}
+
+.pagination .page-link:hover {
+  background-color: var(--pokemon-leaf);
+  border-color: var(--pokemon-green);
+  color: var(--pokemon-dark-green);
+}
+
+.pagination .page-item.active .page-link:hover {
+  background-color: var(--pokemon-green);
+  color: white;
+}
+
+/* Form validation styles */
+.form-text {
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.form-text.text-danger {
+  color: #dc3545;
+}
+
+/* Navbar styles */
+.btn-link {
+  text-decoration: none;
+}
+
+.dropdown-menu {
+  min-width: 200px;
+}
+
+.dropdown-item {
+  white-space: normal;
+  word-break: break-all;
+}
+
+@media (max-width: 575.98px) {
+  .navbar .gap-3 {
+    gap: 0.5rem !important;
+  }
+}
